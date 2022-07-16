@@ -15,7 +15,7 @@ function App() {
       <Header handleToggleSidebar={handleToggleSidebar}/>
       
       <div className="app_container border border-info">
-        <Sidebar sidebar={sidebar}/>
+        <Sidebar sidebar={sidebar} handleToggleSidebar={handleToggleSidebar} />
 
         <Container fluid className="app__main border border-warning">
           <HomeScreen />

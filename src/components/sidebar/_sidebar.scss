@@ -6,6 +6,7 @@
     width: 250px;
     height: 90vh;
     padding-top: 2rem;
+    transition: transform 0.2s ease-in;
     li {
         display: flex;
         align-items: center;
@@ -27,7 +28,7 @@
         background-color: $border-color;
     }
     &.open {
-        display: block;
+        transform: translate(0);
     }
 }
 
@@ -45,6 +46,8 @@
 
 @media(max-width:$breakpoint-small) {
     .sidebar {
-        display: none
+        transform: translate(-100%);
+        position: fixed;
+        z-index: 1000;
     }
 }
